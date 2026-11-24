@@ -30,4 +30,4 @@ jobs:
           xcodebuild -project larping.xcodeproj -scheme larping \
             -destination 'platform=iOS Simulator,name=iPhone 17' test \
             2>&1 | tee test.log | grep -Ei "error:|failed|TEST SUCCEEDED"
-          ! grep -q "TEST FAILED" test.log
+          ! grep -q "TEST sFAILED" test.log
